@@ -8,18 +8,42 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController,UIScrollViewDelegate,BNSwipeableButtonDelegate {
+    
+    @IBOutlet var priorityLabel: UILabel!
+    @IBOutlet var button: BNSwipeableButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        button.setup(colors: [(.blue,.green), (.green,.yellow), (.yellow,.red), (.red,.purple)], delegate: self)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    func buttonDidTap() {
+        priorityLabel.text = "💣"
+    }
+    
+    func buttonPageDidChange(to page:Int){
+        // Page has changed, do your thing!
+        var text = ""
+        switch page{
+        case 0:
+            text = "❄️"
+        case 1:
+            text = "🔥"
+        case 2:
+            text = "🔥🔥"
+        case 3:
+            text = "🔥🔥🔥"
+        default:
+            break
+        }
+        priorityLabel.text = text
+    }
 }
 

@@ -13,6 +13,7 @@
 		AB231DE21F74D351007EC981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB231DE11F74D351007EC981 /* Assets.xcassets */; };
 		AB231DE51F74D351007EC981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB231DE31F74D351007EC981 /* LaunchScreen.storyboard */; };
 		AB231DF01F74D352007EC981 /* BNSwipeableButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB231DEF1F74D352007EC981 /* BNSwipeableButtonUITests.swift */; };
+		AB231DFB1F74EA04007EC981 /* BNSwipeableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB231DFA1F74EA04007EC981 /* BNSwipeableButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +29,7 @@
 /* Begin PBXFileReference section */
 		AB231DD71F74D351007EC981 /* BNSwipeableButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BNSwipeableButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB231DDA1F74D351007EC981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AB231DDC1F74D351007EC981 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB231DDC1F74D351007EC981 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AB231DDF1F74D351007EC981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB231DE11F74D351007EC981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB231DE41F74D351007EC981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +37,7 @@
 		AB231DEB1F74D352007EC981 /* BNSwipeableButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BNSwipeableButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB231DEF1F74D352007EC981 /* BNSwipeableButtonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNSwipeableButtonUITests.swift; sourceTree = "<group>"; };
 		AB231DF11F74D352007EC981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB231DFA1F74EA04007EC981 /* BNSwipeableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNSwipeableButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				AB231DDA1F74D351007EC981 /* AppDelegate.swift */,
 				AB231DDC1F74D351007EC981 /* ViewController.swift */,
+				AB231DFA1F74EA04007EC981 /* BNSwipeableButton.swift */,
 				AB231DDE1F74D351007EC981 /* Main.storyboard */,
 				AB231DE11F74D351007EC981 /* Assets.xcassets */,
 				AB231DE31F74D351007EC981 /* LaunchScreen.storyboard */,
@@ -201,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB231DFB1F74EA04007EC981 /* BNSwipeableButton.swift in Sources */,
 				AB231DDD1F74D351007EC981 /* ViewController.swift in Sources */,
 				AB231DDB1F74D351007EC981 /* AppDelegate.swift in Sources */,
 			);
@@ -345,6 +349,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W4UKB5UNSC;
 				INFOPLIST_FILE = BNSwipeableButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bngr.BNSwipeableButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -358,6 +363,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W4UKB5UNSC;
 				INFOPLIST_FILE = BNSwipeableButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bngr.BNSwipeableButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +418,7 @@
 				AB231DF61F74D352007EC981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB231DF71F74D352007EC981 /* Build configuration list for PBXNativeTarget "BNSwipeableButtonUITests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +427,7 @@
 				AB231DF91F74D352007EC981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
